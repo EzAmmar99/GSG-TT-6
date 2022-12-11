@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSG-TT-6 Assignment</title>
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <div class="hide-scrollbar"></div>
+    <div class="container">
+      <h1 class="title">Daily Todo</h1>
+      <div class="todos">
+        <footer class="active">
+          <div class="card">
+            <input class="title-input" type="text" placeholder="todo title" />
+            <textarea
+              class="content-input"
+              placeholder="todo content"
+            ></textarea>
+          </div>
+
+          <div class="footer-btns">
+            <button class="btn" id="cancel" onclick="onCansleClick()">
+              <img src="./assets/cancel.png" alt="cancel btn" />
+            </button>
+            <button class="btn" id="save" onclick="onSaveClick()">
+              <img src="./assets/save.png" alt="save btn" />
+            </button>
+          </div>
+        </footer>
+      </div>
+
+      <footer class="disabled">
+        <button class="btn" id="add" onclick="onAddClick()">
+          <img src="./assets/add.png" alt="add btn" />
+        </button>
+      </footer>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
